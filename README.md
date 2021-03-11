@@ -1,6 +1,22 @@
 # codes.lstp.rec
+## Overview
 This repo contains the LSTPR model and the seven baselines. Also, the Amazon-beauty dataset is included.
-
+```
+├── data (directory for original graph files, LSTP graph files, and field files)
+├── emb (directory for embedding files)
+├── preprocess.py (generate LSTP graph files)
+├── field.py  (generate field files for HOP-Rec and LSTPR)
+├── lfm-bpr.py (baseline: BPR)
+├── lfm-warp.py (baseline: WARP)
+├── smore (baseline: HOP-Rec)
+├── SkewOPT (baseline: SkewOPT)
+├── LightGCN (baseline: LightGCN)
+├── Caser (baseline: Caser)
+├── CosRec (baseline: CosRec)
+├── predict.py (evaluation code for BPR, WARP, HOP-Rec, SkewOPT, and HOP-Rec)
+├── utils.py (contains evaluation metrics)
+├── run.sh (script file for preprocessing and all methods' usages)
+```
 ## Abstract
 Considering the temporal order of user-item interactions for recommendation forms a novel class of recommendation algorithms in recent years, among which sequential recommendation models are the most popular approaches. Although, theoretically, such fine-grained modeling should be beneficial to the recommendation performance, these sequential models in practice greatly suffer from the issue of data sparsity as there are a huge number of combinations for item sequences. To address the issue, we propose LSTPR, a graph-based matrix factorization model that incorporates both high-order graph information and long short-term user preferences into the modeling process. LSTPR explicitly distinguishes long-term and short-term user preferences and enriches the sparse interactions via random surfing on the user-item graph. Experiments on three recommendation datasets with temporal user-item information demonstrate that the proposed LSTPR model achieves significantly better performance than the seven baseline methods.
 
