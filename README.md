@@ -23,7 +23,7 @@ Considering the temporal order of user-item interactions for recommendation form
 ## Usages
 All usages are written in the ```run.sh``` file. Use ```bash run.sh``` to run the script.
 
-For parameter tuning and requirements, please follow the references. Note that the default parameters are same as those in the LSTPR paper.
+For parameter tuning and requirements of each model, please follow the corresponding ```README.md``` or reference. Note that the default parameters are same as those in the LSTPR paper.
 - LightFM: https://github.com/lyst/lightfm
 - SMORe: https://github.com/cnclabs/smore
 - LightGCN: https://github.com/gusye1234/LightGCN-PyTorch
